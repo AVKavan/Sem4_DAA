@@ -8,7 +8,7 @@ void shifttable(char* p)
     for(int i=0;i<128;i++)
     table[i]=strlen(p);
 
-    for(int i=0;i<strlen(p);i++)
+    for(int i=0;i<strlen(p)-1;i++)
     {
         table[p[i]]=strlen(p)-1-i;
     }
