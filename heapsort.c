@@ -1,6 +1,7 @@
  #include<stdio.h>
  #include<time.h>
 int h[50];
+
 void heapify(int h[],int n)
 {
    int i,k,j,v,heap;
