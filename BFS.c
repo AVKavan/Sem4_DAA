@@ -42,6 +42,7 @@ int dequeue(queue* q)
     q.size=n;
     q.f=q.r=-1;
     q.arr=(int*)malloc(q.size*sizeof(int));
+    
     int a[n][n];
 
     printf("Enter the adjacency matrix: \n");
