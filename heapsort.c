@@ -12,36 +12,26 @@ void heapify(int h[],int n)
       heap=0;
       while(!(heap) && 2*k<=n)
       { 
-     
-
         j=2*k;
         if(j<n)
-        {if(h[j]<h[j+1])
-         j++;}
+           { if(h[j]<h[j+1])
+               j++;
+           }
 
-            if(v>=h[j])
-            heap=1;
-            else{
-                h[k]=h[j];
-                k=j;
-              
+         if(v>=h[j])
+         heap=1;
+         else\
+           {
+             h[k]=h[j];
+             k=j;  
             }
-         
-              h[k]=v;
-        
+          h[k]=v; 
       }
-
-
    }
-
 }
-
-
 
  int main()
  {  
-
-
     int n;
     printf("Enter the size of the array: ");
     scanf("%d",&n);
@@ -59,12 +49,9 @@ void heapify(int h[],int n)
         h[i]=h[1];
         h[1]=t;
         size=i-1;
-       
         heapify(h,size);
-
-    }
-
-
+   }
+   
     printf("the sorted elements:\n");
     for(int i=1;i<=n;i++)
     printf("%d ",h[i]);
